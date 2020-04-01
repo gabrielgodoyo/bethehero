@@ -1,25 +1,28 @@
+// JSX (JavaScript XML)
+//onClick: Chama a função quando o usuário clica no botão
+//React, { useState }
+  //const [counter, setCounter] = useState(0); //Variável tipo let -> Consigo alterar o valor
+
+  // Array [valor, FunçãoDeAtualização]
+
+  //function increment() {
+  //  setCounter(counter + 1);
+  //}
+
+  //<div>
+  //    <Header>contador: {counter}</Header>
+  //    <button onClick={increment}>Incrementar</button>
+  //  </div>
+
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import './global.css';
+
+import Routes from './routes';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello Omnistack
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes />
   );
 }
 
