@@ -14,12 +14,12 @@ module.exports = {
         const id = crypto.randomBytes(4).toString('HEX'); /** Documentação Node */
 
         await connection('ongs').insert({
-        id,
-        name,
-        email,
-        whatsapp,
-        city,
-        uf,
+            id,
+            name,
+            email,
+            whatsapp,
+            city,
+            uf,
         })
 
         return response.json({ id });
